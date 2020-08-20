@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.tablayout_example.R
-import com.example.tablayout_example.databinding.FragmentDemoObjectBinding
+import com.example.tablayout_example.databinding.FragmentCollectionDemoBinding
 import com.example.tablayout_example.home.presentation.screen.adapter.DemoCollectionPagerAdapter
 
 class CollectionDemoFragment : Fragment() {
 
     private lateinit var demoCollectionPagerAdapter: DemoCollectionPagerAdapter
-    private lateinit var binding : FragmentDemoObjectBinding
+    private lateinit var binding : FragmentCollectionDemoBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
