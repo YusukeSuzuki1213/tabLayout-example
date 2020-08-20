@@ -12,7 +12,7 @@ class DemoCollectionPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapte
         private const val ARG_OBJECT = "object"
     }
 
-    override fun getCount(): Int  = 100
+    override fun getCount(): Int  = 4
 
     override fun getItem(i: Int): Fragment {
         val fragment = DemoObjectFragment()
