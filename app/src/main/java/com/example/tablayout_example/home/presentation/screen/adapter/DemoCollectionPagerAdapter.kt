@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import com.example.tablayout_example.home.presentation.screen.HomeFragment
+import com.example.tablayout_example.home.presentation.screen.DemoObjectFragment
 
 class DemoCollectionPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
@@ -15,7 +15,7 @@ class DemoCollectionPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapte
     override fun getCount(): Int  = 100
 
     override fun getItem(i: Int): Fragment {
-        val fragment = HomeFragment()
+        val fragment = DemoObjectFragment()
         fragment.arguments = Bundle().apply {
             // Our object is just an integer :-P
             putInt(ARG_OBJECT, i + 1)
